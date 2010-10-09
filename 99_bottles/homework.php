@@ -1,4 +1,4 @@
-<?$a=99;$c=" of beer";$d=" on the wall";while($a){$b=$a>1?es:e;$e=$a>1?"Take one down and pass it around":"Go to the store and buy some more";echo"$a bottl$b$c$d, $a bottl$b$c.
-$e, ";$a--;echo($b=$a>0?$a:99)." bottl".($b>1?es:e)."$c$d.
+<?$a=99;while($a){$b=function($a){return"$a bottl".($a>1?es:e)." of beer";};$c=" on the wall";echo$b($a).$c.", ".$b($a).".
+";echo$a>1?'Take one down and pass it around, '.$b($a-1):'Go to the store and buy some more, '.$b(99);echo"$c.
 
-";}
+";$a--;}
