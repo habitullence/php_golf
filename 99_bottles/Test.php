@@ -1,34 +1,26 @@
 <?php
+error_reporting('E_ALL &~E_NOTICE');
+
 class Test extends PHPUnit_Framework_TestCase
 {
-	public function testHomeworkIsCorrect() 
-	{
-		$this->_outputIsCorrect('homework.php');
-	}
-	
-	public function testInputIsCorrect()
-	{
-		$this->_outputIsCorrect('input.php');
-	}
-	
-	public function testSize()
-	{
-		$expected = 212;
-		$actual = filesize('input.php');
-		
-		$this->assertLessThan($expected, $actual);
-	}
-	
-	private function _outputIsCorrect($file)
+	public function testHomeworkOutput() 
 	{
 		ob_start();
 		include 'output.php';
 		$expected = trim(ob_get_clean());
 		
 		ob_start();
-		include $file;
+		include 'homework.php';
 		$actual = trim(ob_get_clean());
 		
 		$this->assertEquals($expected, $actual);
+	}
+	
+	public function testHomeworkSize()
+	{
+		$expected = 212;
+		$actual = filesize('homework.php');
+		
+		$this->assertLessThan($expected, $actual);
 	}
 }

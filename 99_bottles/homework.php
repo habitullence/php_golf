@@ -1,20 +1,4 @@
-<?php
-$a = 99;
+<?$a=99;while($a){echo"$a bottl".($b=($a>1)?es:e).$c=" of beer";echo$d=" on the wall";echo", $a bottl$b$c.
+".(($a>1)?"Take one down and pass it around":"Go to the store and buy some more").", ";$a--;echo($b=($a>0)?$a:99)." bottl".(($b>1)?es:e)."$c$d.
 
-while ($a > 0) {
-	$e = $f = 'bottle';
-	if ($a > 1) {
-		$c = $a - 1;
-		$d = 'Take one down and pass it around';
-		$e .= 's';
-	}
-	else {
-		$c = 99;
-		$d = 'Go to the store and buy some more';
-	}
-	if ($a != 2) $f .= 's'; 
-	$g = 'of beer';
-	$h = 'on the wall';
-	echo "$a $e $g $h, $a $e $g.\n$d, $c $f $g $h.\n\n";
-	$a --;
-}
+";}
