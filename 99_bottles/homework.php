@@ -1,4 +1,6 @@
-<?$a=99;while($a){$b=function($a){return"$a bottl".($a>1?es:e)." of beer";};$c=" on the wall";$d=$b($a);$a--;$e=$a>0?"Take one down and pass it around, {$b($a)}":"Go to the store and buy some more, {$b(99)}";echo"$d$c, $d.
-$e$c.
+<?while($b<99){$p=$b++?es:e;$o="$b bottl$p of beer";$w="$o on the wall";$s=($b<99?"
+Take one down and pass it around, $w.
 
-";}
+":"")."$w, $o.$s";
+}echo"$s
+Go to the store and buy some more, $w.";
