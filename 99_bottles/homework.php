@@ -1,4 +1,4 @@
-<?while($b<99){$b++;$o="$b bottle$p of beer";$p=s;$w="$o on the wall";$s="
+<?while($b++<99){$o="$b bottle$p of beer";$p=s;$w="$o on the wall";$s="
 Take one down and pass it around, $w.
 
 $w, $o.$s";}echo substr("$s
