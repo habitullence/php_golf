@@ -7,7 +7,7 @@ class Test extends PHPUnit_Framework_TestCase
 	{
 		ob_start();
 		include 'output.php';
-		$expected = trim(ob_get_clean());
+		$expected = ob_get_clean();
 		
 		ob_start();
 		include 'homework.php';
