@@ -18,7 +18,7 @@ class Test extends PHPUnit_Framework_TestCase
 	
 	public function testHomeworkSize()
 	{
-		$expected = 233;
+		$expected = 179;
 		$actual = filesize('homework.php');
 		
 		$this->assertLessThan($expected, $actual);
