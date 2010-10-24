@@ -1,2 +1,2 @@
-0<?while($x++<10000)echo$x==strrev($x)?"
-$x":'';
+0<?while($x++<1e4)strrev($x)-$x||print"
+$x";
